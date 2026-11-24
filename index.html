@@ -17,6 +17,27 @@ p { margin:0 0 12px; }
 a { color:var(--link); }
 nav, footer { border-top:1px solid var(--line); margin-top:36px; padding-top:16px; color:var(--muted); font-size:15px; }
 ul { padding-left:22px; margin:0 0 12px; }
+.row { display:flex; gap:28px; margin:0 0 6px; }
+.f { flex:1 1 0; }
+.f.wide { flex:1.6 1 0; }
+.line { display:block; height:34px; border-bottom:1.5px solid var(--ink); }
+.f label { display:block; font-size:13px; color:var(--muted); margin-top:3px; }
+.consent { display:flex; gap:14px; align-items:flex-start; border:1.5px solid var(--ink); border-radius:4px; padding:14px 16px; margin:8px 0 12px; }
+.consent p { margin:0; }
+.box { flex:0 0 22px; width:22px; height:22px; border:2px solid var(--ink); margin-top:3px; }
+.small { font-size:14px; color:var(--muted); }
+.office { border-top:1px dashed var(--line); margin-top:22px; padding-top:6px; }
+@page { size: Letter; margin: 0.6in 0.75in; }
+@media print {
+  :root { --ink:#000000; --muted:#333333; --line:#888888; --bg:#ffffff; --link:#000000; }
+  body { font-size:10.5pt; line-height:1.4; }
+  main { max-width:none; padding:0; }
+  h1 { font-size:18pt; } h2 { font-size:12pt; margin:11pt 0 3pt; } p { margin:0 0 6pt; }
+  header p { font-size:9.5pt; } .small { font-size:9pt; } .f label { font-size:8.5pt; }
+  .line { height:23pt; } .consent { padding:8pt 10pt; margin:5pt 0 7pt; } .office { margin-top:10pt; }
+  nav, footer { display:none; }
+  a { text-decoration:none; }
+}
 </style>
 </head>
 <body>
@@ -30,10 +51,11 @@ ul { padding-left:22px; margin:0 0 12px; }
 <ul>
 <li><a href="terms.html">SMS Terms and Conditions</a></li>
 <li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="consent-form.pdf">Consent form (PDF)</a>, the form each person signs before receiving any message</li>
 </ul>
 <p>Message frequency varies. Message and data rates may apply. Reply STOP to any message to opt out, or HELP for help.</p>
 <nav>
-<a href="terms.html">SMS Terms and Conditions</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="index.html">About this program</a>
+<a href="terms.html">SMS Terms and Conditions</a> &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="consent-form.html">Consent form</a> &nbsp;|&nbsp; <a href="index.html">About this program</a>
 </nav>
 <footer>
 Meridian Worldwide Transportation Group &middot; Questions: <a href="mailto:admin@meridianww.com">admin@meridianww.com</a>
